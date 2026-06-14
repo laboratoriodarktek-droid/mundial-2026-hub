@@ -1,0 +1,169 @@
+{
+  "torneo": {
+    "nombre": "FIFA World Cup 2026",
+    "fase": "Fase de grupos",
+    "actualizado": "2026-06-13T22:30:00.000Z"
+  },
+  "grupos": [
+    {
+      "letra": "A",
+      "equipos": [
+        { "nombre": "Argentina", "pais_codigo": "ar", "pts": 6, "pj": 2, "pg": 2, "pe": 0, "pp": 0, "gf": 4, "gc": 1, "dg": 3 },
+        { "nombre": "México", "pais_codigo": "mx", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 2, "gc": 2, "dg": 0 },
+        { "nombre": "Polonia", "pais_codigo": "pl", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 2, "gc": 3, "dg": -1 },
+        { "nombre": "Arabia Saudita", "pais_codigo": "sa", "pts": 0, "pj": 2, "pg": 0, "pe": 0, "pp": 2, "gf": 0, "gc": 2, "dg": -2 }
+      ]
+    },
+    {
+      "letra": "B",
+      "equipos": [
+        { "nombre": "Francia", "pais_codigo": "fr", "pts": 4, "pj": 2, "pg": 1, "pe": 1, "pp": 0, "gf": 3, "gc": 1, "dg": 2 },
+        { "nombre": "Dinamarca", "pais_codigo": "dk", "pts": 4, "pj": 2, "pg": 1, "pe": 1, "pp": 0, "gf": 2, "gc": 1, "dg": 1 },
+        { "nombre": "Túnez", "pais_codigo": "tn", "pts": 0, "pj": 2, "pg": 0, "pe": 0, "pp": 2, "gf": 0, "gc": 2, "dg": -2 },
+        { "nombre": "Australia", "pais_codigo": "au", "pts": 0, "pj": 2, "pg": 0, "pe": 0, "pp": 2, "gf": 1, "gc": 2, "dg": -1 }
+      ]
+    },
+    {
+      "letra": "C",
+      "equipos": [
+        { "nombre": "Brasil", "pais_codigo": "br", "pts": 6, "pj": 2, "pg": 2, "pe": 0, "pp": 0, "gf": 5, "gc": 0, "dg": 5 },
+        { "nombre": "Suiza", "pais_codigo": "ch", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 2, "gc": 3, "dg": -1 },
+        { "nombre": "Camerún", "pais_codigo": "cm", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 1, "gc": 2, "dg": -1 },
+        { "nombre": "Serbia", "pais_codigo": "rs", "pts": 0, "pj": 2, "pg": 0, "pe": 0, "pp": 2, "gf": 1, "gc": 4, "dg": -3 }
+      ]
+    },
+    {
+      "letra": "D",
+      "equipos": [
+        { "nombre": "España", "pais_codigo": "es", "pts": 4, "pj": 2, "pg": 1, "pe": 1, "pp": 0, "gf": 4, "gc": 1, "dg": 3 },
+        { "nombre": "Alemania", "pais_codigo": "de", "pts": 4, "pj": 2, "pg": 1, "pe": 1, "pp": 0, "gf": 3, "gc": 1, "dg": 2 },
+        { "nombre": "Japón", "pais_codigo": "jp", "pts": 0, "pj": 2, "pg": 0, "pe": 0, "pp": 2, "gf": 0, "gc": 2, "dg": -2 },
+        { "nombre": "Costa Rica", "pais_codigo": "cr", "pts": 0, "pj": 2, "pg": 0, "pe": 0, "pp": 2, "gf": 0, "gc": 3, "dg": -3 }
+      ]
+    },
+    {
+      "letra": "E",
+      "equipos": [
+        { "nombre": "Inglaterra", "pais_codigo": "gb", "pts": 6, "pj": 2, "pg": 2, "pe": 0, "pp": 0, "gf": 6, "gc": 0, "dg": 6 },
+        { "nombre": "EE.UU.", "pais_codigo": "us", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 1, "gc": 2, "dg": -1 },
+        { "nombre": "Gales", "pais_codigo": "gb-wls", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 1, "gc": 3, "dg": -2 },
+        { "nombre": "Irán", "pais_codigo": "ir", "pts": 0, "pj": 2, "pg": 0, "pe": 0, "pp": 2, "gf": 2, "gc": 5, "dg": -3 }
+      ]
+    },
+    {
+      "letra": "F",
+      "equipos": [
+        { "nombre": "Bélgica", "pais_codigo": "be", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 1, "gc": 2, "dg": -1 },
+        { "nombre": "Marruecos", "pais_codigo": "ma", "pts": 4, "pj": 2, "pg": 1, "pe": 1, "pp": 0, "gf": 2, "gc": 0, "dg": 2 },
+        { "nombre": "Croacia", "pais_codigo": "hr", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 3, "gc": 2, "dg": 1 },
+        { "nombre": "Canadá", "pais_codigo": "ca", "pts": 1, "pj": 2, "pg": 0, "pe": 1, "pp": 1, "gf": 1, "gc": 3, "dg": -2 }
+      ]
+    },
+    {
+      "letra": "G",
+      "equipos": [
+        { "nombre": "Portugal", "pais_codigo": "pt", "pts": 6, "pj": 2, "pg": 2, "pe": 0, "pp": 0, "gf": 5, "gc": 1, "dg": 4 },
+        { "nombre": "Corea del Sur", "pais_codigo": "kr", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 2, "gc": 2, "dg": 0 },
+        { "nombre": "Uruguay", "pais_codigo": "uy", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 2, "gc": 3, "dg": -1 },
+        { "nombre": "Ghana", "pais_codigo": "gh", "pts": 0, "pj": 2, "pg": 0, "pe": 0, "pp": 2, "gf": 1, "gc": 4, "dg": -3 }
+      ]
+    },
+    {
+      "letra": "H",
+      "equipos": [
+        { "nombre": "Países Bajos", "pais_codigo": "nl", "pts": 4, "pj": 2, "pg": 1, "pe": 1, "pp": 0, "gf": 3, "gc": 1, "dg": 2 },
+        { "nombre": "Senegal", "pais_codigo": "sn", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 2, "gc": 2, "dg": 0 },
+        { "nombre": "Ecuador", "pais_codigo": "ec", "pts": 3, "pj": 2, "pg": 1, "pe": 0, "pp": 1, "gf": 2, "gc": 2, "dg": 0 },
+        { "nombre": "Qatar", "pais_codigo": "qa", "pts": 1, "pj": 2, "pg": 0, "pe": 1, "pp": 1, "gf": 1, "gc": 3, "dg": -2 }
+      ]
+    }
+  ],
+  "partidosHoy": [
+    {
+      "id": "arg-mex-1",
+      "grupo": "Grupo A",
+      "local": "Argentina",
+      "visita": "México",
+      "golesLocal": 2,
+      "golesVisita": 1,
+      "estado": "en_vivo",
+      "minuto": "67",
+      "hora": "21:00",
+      "estadio": "Estadio Azteca",
+      "ciudad": "Ciudad de México",
+      "eventos": [
+        { "minuto": "12", "tipo": "gol", "equipo": "Argentina", "jugador": "L. Messi", "detalle": "Tiro libre" },
+        { "minuto": "28", "tipo": "amarilla", "equipo": "México", "jugador": "H. Herrera", "detalle": "Falta táctica" },
+        { "minuto": "45+2", "tipo": "gol", "equipo": "México", "jugador": "R. Jiménez", "detalle": "Cabeza" },
+        { "minuto": "58", "tipo": "var", "equipo": "Argentina", "jugador": "—", "detalle": "Gol anulado por offside" },
+        { "minuto": "63", "tipo": "gol", "equipo": "Argentina", "jugador": "J. Álvarez", "detalle": "Dentro del área" }
+      ],
+      "estadisticas": {
+        "posesionLocal": 58,
+        "posesionVisita": 42,
+        "tirosLocal": 12,
+        "tirosVisita": 6,
+        "cornersLocal": 5,
+        "cornersVisita": 2
+      }
+    },
+    {
+      "id": "bra-sui",
+      "grupo": "Grupo C",
+      "local": "Brasil",
+      "visita": "Suiza",
+      "golesLocal": 0,
+      "golesVisita": 0,
+      "estado": "programado",
+      "minuto": null,
+      "hora": "16:00",
+      "estadio": "Estadio Lusail",
+      "ciudad": "Lusail",
+      "eventos": [],
+      "estadisticas": {}
+    },
+    {
+      "id": "fra-dnk",
+      "grupo": "Grupo B",
+      "local": "Francia",
+      "visita": "Dinamarca",
+      "golesLocal": 2,
+      "golesVisita": 1,
+      "estado": "finalizado",
+      "minuto": "90+5",
+      "hora": "13:00",
+      "estadio": "Estadio 974",
+      "ciudad": "Doha",
+      "eventos": [
+        { "minuto": "23", "tipo": "gol", "equipo": "Francia", "jugador": "K. Mbappé", "detalle": "Definición" },
+        { "minuto": "55", "tipo": "gol", "equipo": "Dinamarca", "jugador": "P. Højbjerg", "detalle": "Tiro de media distancia" },
+        { "minuto": "78", "tipo": "roja", "equipo": "Dinamarca", "jugador": "J. Maehle", "detalle": "Doble amarilla" },
+        { "minuto": "86", "tipo": "gol", "equipo": "Francia", "jugador": "K. Mbappé", "detalle": "Penal" }
+      ],
+      "estadisticas": {
+        "posesionLocal": 52,
+        "posesionVisita": 48,
+        "tirosLocal": 14,
+        "tirosVisita": 9,
+        "cornersLocal": 6,
+        "cornersVisita": 4
+      }
+    }
+  ],
+  "bracket": {
+    "dieciseisavos": [
+      { "local": "1A", "visita": "2B", "golesLocal": null, "golesVisita": null },
+      { "local": "1C", "visita": "2D", "golesLocal": null, "golesVisita": null },
+      { "local": "1E", "visita": "2F", "golesLocal": null, "golesVisita": null },
+      { "local": "1G", "visita": "2H", "golesLocal": null, "golesVisita": null },
+      { "local": "1B", "visita": "2A", "golesLocal": null, "golesVisita": null },
+      { "local": "1D", "visita": "2C", "golesLocal": null, "golesVisita": null },
+      { "local": "1F", "visita": "2E", "golesLocal": null, "golesVisita": null },
+      { "local": "1H", "visita": "2G", "golesLocal": null, "golesVisita": null }
+    ],
+    "octavos": [],
+    "cuartos": [],
+    "semis": [],
+    "final": null
+  }
+}
