@@ -1,0 +1,55 @@
+name: Scrape Mundial 2026
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Install dependencies
+        working-directory: scraper
+        run: npm ci || npm install
+
+      - name: Install Playwright browsers
+        working-directory: scraper
+        run: npx playwright install --with-deps chromium
+
+      - name: Run scraper (loop 60s durante 4 min)
+        working-directory: scraper
+        run: |
+          timeout 240 node index.js || echo "timeout OK"
+
+      - name: Verify JSON output
+        run: |
+          if [ ! -f data/worldcup-data.json ]; then
+            echo "❌ No se generó worldcup-data.json"
+            exit 1
+          fi
+          echo "✅ JSON generado"
+          ls -la data/
+
+      - name: Commit & push JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/worldcup-data.json data/scraper.log || true
+          git diff --staged --quiet || git commit -m "chore: actualizar worldcup-data.json [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git push
