@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundial 2026 Hub — En vivo, grupos, bracket</title>
+  <meta name="description" content="Sigue el Mundial 2026 al vivo: partidos, grupos, bracket, goles y estadísticas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Top nav -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">⚽</div>
+      <div class="brand-text">
+        <h1>MUNDIAL 2026</h1>
+        <span class="brand-sub" id="brandSub">Cargando torneo...</span>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <div class="status-pill" id="statusPill">
+        <span class="status-dot"></span>
+        <span id="statusText">Conectando...</span>
+      </div>
+      <button class="lang-toggle" id="langToggle" title="Cambiar idioma">EN</button>
+    </div>
+  </header>
+
+  <!-- Live hero (partido principal en vivo) -->
+  <section class="live-hero" id="liveHero">
+    <!-- Se llena por JS si hay partido en vivo -->
+    <div class="live-placeholder">
+      <div class="live-placeholder-icon">📺</div>
+      <p>Buscando partido en vivo...</p>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <nav class="tabs">
+    <button class="tab active" data-tab="hoy">Hoy</button>
+    <button class="tab" data-tab="grupos">Grupos</button>
+    <button class="tab" data-tab="bracket">Bracket</button>
+    <button class="tab" data-tab="noticias">Noticias</button>
+    <button class="tab" data-tab="personajes">Personajes</button>
+  </nav>
+
+  <main class="content">
+    <!-- HOY -->
+    <section class="tab-panel active" id="tab-hoy">
+      <div class="section-header">
+        <h2>Partidos del día</h2>
+        <span class="meta" id="hoyMeta">—</span>
+      </div>
+      <div class="partidos-grid" id="partidosGrid">
+        <div class="loading">Cargando partidos...</div>
+      </div>
+    </section>
+
+    <!-- GRUPOS -->
+    <section class="tab-panel" id="tab-grupos">
+      <div class="section-header">
+        <h2>Fase de grupos</h2>
+        <span class="meta">8 grupos · 32 selecciones</span>
+      </div>
+      <div class="grupos-grid" id="gruposGrid">
+        <div class="loading">Cargando grupos...</div>
+      </div>
+    </section>
+
+    <!-- BRACKET -->
+    <section class="tab-panel" id="tab-bracket">
+      <div class="section-header">
+        <h2>Eliminatorias</h2>
+        <span class="meta">16avos → Gran Final</span>
+      </div>
+      <div class="bracket-wrap" id="bracketWrap">
+        <div class="loading">Cargando bracket...</div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="tab-panel" id="tab-noticias">
+      <div class="section-header">
+        <h2>Noticias del Mundial</h2>
+        <span class="meta">Aperturas · Goles · Resúmenes</span>
+      </div>
+      <div class="news-grid" id="newsGrid">
+        <div class="news-card placeholder">
+          <div class="news-thumb">📰</div>
+          <div class="news-body">
+            <h3>Próximamente</h3>
+            <p>Las noticias se agregarán en fase 2 (scraping de medios).</p>
+          </div>
+        </div>
+        <div class="news-card placeholder">
+          <div class="news-thumb">⚽</div>
+          <div class="news-body">
+            <h3>Highlights</h3>
+            <p>Búsqueda de YouTube por partido (fase 2).</p>
+          </div>
+        </div>
+        <div class="news-card placeholder">
+          <div class="news-thumb">🎙️</div>
+          <div class="news-body">
+            <h3>Radio en vivo</h3>
+            <p>Stream de audio por partido (fase 2).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAJES -->
+    <section class="tab-panel" id="tab-personajes">
+      <div class="section-header">
+        <h2>Nuestros conductores</h2>
+        <span class="meta">4 personajes</span>
+      </div>
+      <div class="personajes-grid" id="personajesGrid">
+        <!-- Placeholders, después se reemplazan -->
+        <article class="personaje-card">
+          <div class="personaje-avatar avatar-1">A</div>
+          <h3>Avatar 1</h3>
+          <p>Reemplazar con personaje definido</p>
+        </article>
+        <article class="personaje-card">
+          <div class="personaje-avatar avatar-2">B</div>
+          <h3>Avatar 2</h3>
+          <p>Reemplazar con personaje definido</p>
+        </article>
+        <article class="personaje-card">
+          <div class="personaje-avatar avatar-3">C</div>
+          <h3>Avatar 3</h3>
+          <p>Reemplazar con personaje definido</p>
+        </article>
+        <article class="personaje-card">
+          <div class="personaje-avatar avatar-4">D</div>
+          <h3>Avatar 4</h3>
+          <p>Reemplazar con personaje definido</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <span>World Cup 2026 Hub</span> ·
+      <span id="lastUpdate">Última actualización: —</span>
+    </div>
+    <div class="footer-sub">Datos: <a href="https://www.promiedos.com.ar" target="_blank" rel="noopener">promiedos.com.ar</a> · Auto-refresh 60s</div>
+  </footer>
+
+  <!-- Board flotante (timeline de acciones del partido en vivo) -->
+  <div class="board-fab" id="boardFab" title="Ver últimas acciones">
+    <span>📋</span>
+  </div>
+  <aside class="board-panel" id="boardPanel">
+    <div class="board-header">
+      <h3>Últimas acciones</h3>
+      <button class="board-close" id="boardClose">×</button>
+    </div>
+    <div class="board-body" id="boardBody">
+      <p class="board-empty">No hay acciones registradas.</p>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
