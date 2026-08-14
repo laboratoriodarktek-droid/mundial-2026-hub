@@ -2,7 +2,7 @@
   "torneo": {
     "nombre": "FIFA World Cup 2026",
     "fase": "Actualizado",
-    "actualizado": "2026-08-14T16:32:50.889Z"
+    "actualizado": "2026-08-14T17:37:16.313Z"
   },
   "grupos": [],
   "partidosHoy": [],
@@ -12,5 +12,6 @@
     "cuartos": [],
     "semis": [],
     "final": null
-  }
+  },
+  "_lastError": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.promiedos.com.ar/league/fifa-world-cup/fjda\", waiting until \"domcontentloaded\"\n"
 }
